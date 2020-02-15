@@ -5,10 +5,17 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    city:'成都'
   },
   mutations: {
+    change(state,city){
+      state.city=city
+    }
   },
   actions: {
+    change(ctx,city){
+      ctx.commit('change',city)
+    }
   },
   modules: {
   }

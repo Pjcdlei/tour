@@ -1,0 +1,44 @@
+{
+  "id": "1629530",
+  "name": "tour",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7550214",
+      "name": "左箭头",
+      "font_class": "zuojiantou1",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "9974429",
+      "name": "省略号",
+      "font_class": "shenglvehao",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    },
+    {
+      "icon_id": "584236",
+      "name": "下箭头",
+      "font_class": "iconfontarrows",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "2593587",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "7708046",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}
