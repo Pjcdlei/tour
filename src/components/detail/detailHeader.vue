@@ -39,4 +39,7 @@ export default {
     padding-right: .5rem;
     color:turquoise;
   }
+  .iconfont{
+    font-size: .5rem;
+  }
 </style>

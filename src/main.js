@@ -3,15 +3,18 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import axios from 'axios'
+import LyTab from 'ly-tab'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import '../src/assets/style/border.css'
 import '../src/assets/style/reset.css'
 import '../src/assets/style/iconfont.css'
 import 'swiper/dist/css/swiper.css'
+import 'mint-ui/lib/style.css'
 // axios.defaults.baseURL="http://localhost:8080"
 Vue.prototype.axios=axios
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
+Vue.use(LyTab)
 new Vue({
   router,
   store,

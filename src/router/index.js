@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Location from '../views/Location.vue'
 import Detail from '../views/detail.vue'
+import detailGalary from '../components/detail/detailGalary.vue'
+import mapContent from '../components/detail/mapContent.vue'
 
 Vue.use(VueRouter)
 
@@ -20,7 +22,17 @@ const routes = [
   {
     path: '/detail/:id',
     name: 'detail',
-    component: Detail
+    component: Detail,
+    children:[
+      {
+        path:'galary',
+        component:detailGalary
+      },
+      {
+        path:'map',
+        component:mapContent
+      }
+    ]
   },
   // {
   //   path: '/about',
