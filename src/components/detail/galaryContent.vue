@@ -40,7 +40,7 @@ export default {
     //   this.length=length
     // }
   },
-  computed:mapState(['index']),//映射
+  computed:mapState(['index']),//
   data(){
     return{
       // length:0,
