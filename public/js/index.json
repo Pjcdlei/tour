@@ -3,20 +3,16 @@
     "city":"上海",
     "SwiperList":[
       {
-          "src":"/image/1.jpg",
-          "to":"javascript:;"
+          "src":"/image/1.jpg"
       },
       {
-          "src":"/image/2.jpg",
-          "to":"javascript:;"
+          "src":"/image/2.jpg"
       },
       {
-          "src":"/image/3.png",
-          "to":"javascript:;"
+          "src":"/image/3.png"
       },
       {
-          "src":"/image/4.jpg",
-          "to":"javascript:;"
+          "src":"/image/4.jpg"
       }
     ],
     "Navlist":[
@@ -56,7 +52,7 @@
       {"imgUrl":"/image/wt.jpg","desc":"外滩","detail":"不夜城的韵味"}
     ],
     "guessContentList":[
-      {"src":"/image/bd.jpg","comment":"11809点评 99%满意度","desc":"【冰岛 • 极光摄影】火山地貌-极光苍穹-冰雪瀑布-万年冰川-蓝湖温泉-草帽山-黑沙滩-飞机残骸-冰河湖，小众机位点缀，北欧冬季冰岛12日追光之旅","dist":"3","price":"37900"},
+      {"src":"/image/nhw1.jpg","comment":"11809点评 99%满意度","desc":"【禅意拈花湾2020】夜宿5星拈花客栈/禅意村舍/君来波罗蜜多酒店，“小京都”禅意游（拈花湾门票+禅食/自助晚餐可选 ）","dist":"3","price":"599"},
       {"src":"/image/nj.jpg","comment":"11809点评 99%满意度","desc":"【天境怒江】怒江收客霸主！探访人神共居丙中洛，寻找与世隔绝纹面女，怒江&独龙江大峡谷8日边疆行","dist":"3","price":"37900"},
       {"src":"/image/kh.jpg","comment":"11809点评 99%满意度","desc":"【开化春色】3-4月，探秘钱江源头，醉美开化，天上人间台回山，壮美梯田花海","dist":"3","price":"37900"},
       {"src":"/image/lj.jpg","comment":"11809点评 99%满意度","desc":"【徒步雨崩】游侠客高海拔徒步TOP1 丽江-梅里雪山日照金山-雨崩村-冰湖神瀑-金沙江大拐弯-虎跳峡，5/7日轻装徒步之旅","dist":"3","price":"37900"}

@@ -5,11 +5,11 @@
     <div class="map">
       <div class="mapLeft">
         <div class="mapLeftDesc">
-          <span>上海</span>
+          <span>无锡</span>
           <span class="address">酒店地址</span>
         </div>
         <div class="mapLeftAddress">
-          滨湖区马山环山西路23号
+          马山拈花湾景区内别墅区
         </div>
       </div>
       <div class="mapRight">
@@ -30,6 +30,7 @@ export default {
     height: 1.5rem;
     font-size: .3rem;
     background: #fff;
+    padding-top: .2rem;
 
   }
   .mapLeft{
@@ -45,7 +46,8 @@ export default {
   }
   .address{
     border:.02rem solid #000;
-    color: #aaa
+    color: #aaa;
+    margin-left: .1rem;
   }
   .mapRight{
     float: right;
@@ -64,5 +66,8 @@ export default {
     position: absolute;
     top: .6rem;
     right: .2rem;
+  }
+  .mapLeftAddress{
+    margin-left: .2rem;
   }
 </style>

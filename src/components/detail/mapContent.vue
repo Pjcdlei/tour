@@ -46,24 +46,28 @@ export default {
             // console.log(point)
             if(point){
               if(i===m&&j===n){
-                map.centerAndZoom(point,15)
+                map.centerAndZoom(point,11)
                 let myIcon=new BMap.Icon(markerImg,new BMap.Size(50,50),{
                   imageOffset:new BMap.Size(14,2)
                 })
                 let marker=new BMap.Marker(point,{icon:myIcon})
                 map.addOverlay(marker)
               }else{
-                map.centerAndZoom(point,15)
+                map.centerAndZoom(point,11)
                 let marker=new BMap.Marker(point)
                 map.addOverlay(marker)
                 //添加信息窗口
+                // let opts={
+                //   width:6,
+                //   height:6
+                // }
                 let infoWindow=new BMap.InfoWindow(title.title)
-                infoWindow.setWidth(250)
+                infoWindow.setWidth(150)
                 infoWindow.setHeight(60)
                 map.openInfoWindow(infoWindow,map.getCenter())
               }
             }else{
-              console.log('对不起，找不到')
+              console.log('NONE')
             }
           })
         }
@@ -104,22 +108,22 @@ export default {
       addressList:[
         [
           {
-            label:'北京大栅栏',
-            title:'北京大栅栏1'
+            label:'无锡滨湖区马山环山西路68号',
+            title:'无锡灵山小镇拈花湾客栈'
           },
           {
-            label:'北京天安门',
-            title:'北京天安门'
+            label:'马山环山西路68号拈花湾景区内',
+            title:'无锡拈花湾拈花客栈'
           }
         ],
         [
           {
-            label:'北京颐和园',
-            title:'北京颐和园2'
+            label:'无锡市滨湖区鼋渚路1号',
+            title:'无锡市鼋头渚'
           },
           {
-            label:'北京圆明园',
-            title:'北京圆明园2'
+            label:'无锡市梁溪区古华山路通惠西路交叉口',
+            title:'无锡惠山古镇'
           }
         ],
       ]

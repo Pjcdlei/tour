@@ -3,13 +3,13 @@
       <div class="hotLeft">
           <div class="leftCounter row">
             <div class="limit">限时抢购</div>
-            <div class="count">距结束 <span>23</span>:<span>04</span>:<span>23</span></div>
+            <div class="count">距结束 <span>{{hour}}</span>:<span>{{minute}}</span>:<span>{{second}}</span></div>
           </div>
           <div class="leftContent row" v-for="(item,i) of contentList" :key="i">
               <div class="contentImg">
                   <img  :src="item.imgUrl">
               </div>
-              <div class="contentDesc">{{item.desc|omit}}</div>
+              <div class="contentDesc">{{item.desc}}</div>
           </div>
           <div class="leftPrice row" v-for="(item,i) of priceList" :key="'b'+i">
             <div class="priceSale">
@@ -41,15 +41,40 @@ export default {
       priceList:Array,
       categoryList:Array,
     },
-    filters:{
-      omit(oldVal){
-        if(oldVal.length>30){
-          let a=oldVal.substr(0,29)
-          return a+"..."
-        }
-    }},
+    // filters:{
+    //   omit(oldVal){
+    //     if(oldVal.length>30){
+    //       let a=oldVal.substr(0,29)
+    //       return a+"..."
+    //     }
+    // }},
+    methods:{
+      countdown(){
+          var date=(new Date('2020/2/25')-(new Date()))
+          if(date>0){
+            let time=date/1000
+            this.hour = parseInt((time % (60 * 60 * 24)) / 3600)<10?('0'+parseInt((time % (60 * 60 * 24)) / 3600)):parseInt((time % (60 * 60 * 24)) / 3600)
+            this.minute = parseInt(((time % (60 * 60 * 24)) % 3600) / 60)<10?('0'+parseInt(((time % (60 * 60 * 24)) % 3600) / 60)):parseInt(((time % (60 * 60 * 24)) % 3600) / 60);
+          this.second = parseInt(((time % (60 * 60 * 24)) % 3600) % 60)<10?('0'+parseInt(((time % (60 * 60 * 24)) % 3600) % 60)):parseInt(((time % (60 * 60 * 24)) % 3600) % 60);
+          }else{
+            this.hour='00'
+            this.minute='00'
+            this.second='00'
+          }
+      }
+    },
+    mounted(){
+        setInterval(() => {
+        this.countdown()
+      }, 1000);
+      
+      
+    },
     data(){
       return{
+        hour:'',
+        minute:'',
+        second:''
         // contentList:[
         //   {
         //   imgUrl:require('../assets/image/th.jpg'),
@@ -112,7 +137,14 @@ export default {
     height: .88rem;
   }
   .contentDesc{
+    /* padding-bottom: .1rem; */
+    line-height: .3rem;
     margin-left: .2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
   }
 
   .leftPrice{

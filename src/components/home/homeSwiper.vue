@@ -3,9 +3,9 @@
     <swiper :options="swiperOption">
         <!-- slides -->
         <swiper-slide v-for="(img,i) of SwiperList" :key="i">
-            <router-link :to='img.to'>
+            
                 <img :src="img.src" class="swiperImg">
-            </router-link>
+            
         </swiper-slide>
  
         <!-- Optional controls -->

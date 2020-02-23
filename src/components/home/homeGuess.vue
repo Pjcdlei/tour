@@ -81,11 +81,12 @@ export default {
 }
 .guessContent{
   /* width: 100%; */
-  background-color: #fff;
+  background-color: white;
   overflow: hidden;
   height: 0;
-  padding: .23rem .23rem 60% .23rem;
+  padding: .23rem .23rem 62% .23rem;
   /* background-color: aqua */
+
 
 }
 .guessContentDesc{
@@ -152,7 +153,7 @@ export default {
 }
 .guessDescChange{
   position: fixed;
-  top:.65rem;
+  top:.60rem;
   left: 0;
   z-index: 1000;
   width: 100%;

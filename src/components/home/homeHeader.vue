@@ -58,7 +58,7 @@ export default {
     color: white
 }
 .headerSearch{
-    flex: 6;
+    flex: 5;
     background-color:white ;
     /* opacity: 0.3; */
     box-shadow: 0 0 .05rem .01rem #666;
@@ -69,8 +69,8 @@ export default {
     color: #aaa
 }
 .headerCity{
-    flex:1.5;
-    color: white
+    flex:2;
+    color: white;
     /* background-color: aqua */
 }
 .header1{

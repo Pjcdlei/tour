@@ -17,12 +17,14 @@ const routes = [
   {
     path: '/location',
     name: 'location',
-    component: Location
+    // component: Location
+    component: () => import(/* webpackChunkName: "Location" */ '../views/Location.vue')
   },
   {
     path: '/detail/:id',
     name: 'detail',
-    component: Detail,
+    // component: Detail,
+    component: () => import(/* webpackChunkName: "detail" */ '../views/detail.vue'),
     children:[
       {
         path:'galary',
